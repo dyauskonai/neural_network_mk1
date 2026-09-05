@@ -1,7 +1,7 @@
 import numpy as np
 print("\n")
 def sigmoid(x):
-    # Our activation function: f(x) = 1 / (1 + e^(-x))
+    #  Activation function (Sigmoid): f(x) = 1 / (1 + e^(-x))
     return 1/(1+np.exp(-x))
 
 class Neuron:
@@ -16,7 +16,7 @@ weights = np.array([0,1])
 bias = 4
 n = Neuron(weights,bias)
 
-x = np.array([2,3])
+x = np.array([2,3]) 
 print (n.feedforward(x))
 
 print("\n")
